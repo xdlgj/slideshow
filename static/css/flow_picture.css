@@ -1,0 +1,55 @@
+ul,ol{
+	padding: 0px;
+}
+
+.banner{
+	position: relative;
+	overflow: auto;
+	text-align: center;/*让小圆点居中显示*/
+}
+.banner ul{
+	/*去除列表前面的标记*/
+	list-style: none;
+}
+.banner ul li{
+	float:left;
+}
+#b04{
+	width: 640px;
+}
+#b04 .dots { 
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	bottom: 20px;
+}
+#b04 .dots li 
+{ 
+    display: inline-block; 
+    width: 10px; 
+    height: 10px; 
+    margin: 0 4px; 
+    text-indent: -999em; 
+    border: 2px solid #fff; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    opacity: 0.5; /*小圆点的模糊度0表示完全透明，1表示完全不透明*/
+    -webkit-transition: background .5s, opacity .5s; 
+    -moz-transition: background .5s, opacity .5s; 
+    transition: background .5s, opacity .5s;
+}
+#b04 .dots li.active 
+{
+    background: #fff;
+    opacity: 1;
+}
+#b04 .arrow { 
+	position: absolute; 
+	top: 200px;/*两个箭头的垂直位置*/
+}
+#b04 #al { 
+	left: 15px;
+}
+#b04 #ar { 
+	right: 15px;
+}
